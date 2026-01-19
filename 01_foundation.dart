@@ -30,5 +30,4 @@ void main(){
   } else if (weight <= 85 || isActive == true){
     print("\nYou are on the right track! Keep it up!");
   }
-
 }
