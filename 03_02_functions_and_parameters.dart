@@ -10,6 +10,7 @@ void main(List<String> args) {
   logEvent(eventName: "UserLogin");               // prints: Event: UserLogin, Severity: info
   logEvent(eventName: "ServerError", severity: "high"); // prints: Event: ServerError, Severity: high
 
+  printReceipt();
   // You can further explore and experiment with functions and parameters in Dart!
 }
 
@@ -52,3 +53,24 @@ void logEvent({required String eventName, String severity = "info"}) {
 
 // Note: You can combine positional, named, and optional parameters in a single function as needed.
 
+double getDiscount(double price){
+  if (price > 5000){
+    return 0.2; // 10% discount
+  }else{
+    return 0.1; // 5% discount
+  }
+}
+
+void printReceipt(){
+  double originalPrice = 1200.0;
+  // Get discount rate based on original price
+  double discountRate = getDiscount(originalPrice);
+  // Calculate discount amount
+  double discountAmount = originalPrice * discountRate;
+  // Calculate final price after discount
+  double finalPrice = originalPrice - discountAmount;
+
+  print("Original Price: ₦$originalPrice");
+  print("Discount Rate: ${discountRate * 100}% (Saved ₦$discountAmount) ");
+  print("Final Price after discount: ₦$finalPrice");
+}
