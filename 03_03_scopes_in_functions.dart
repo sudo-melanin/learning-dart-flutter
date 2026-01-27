@@ -15,6 +15,8 @@ void main(List<String> args) {
 }
 
 // Function to change the global variable
+// This function modifies the global variable appName
+// without declaring a new local variable.
 void changeName(){
   appName = "GymBuddy";
   print(appName);
