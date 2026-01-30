@@ -1,14 +1,19 @@
 void main(List<String> args) {
-  List<double> currentPrices = [2000.0, 1500.0, 3000.0, 2500.0];
+  DigitalProduct magazine = DigitalProduct("Eat that frog", 30, "www.eatthatfrog.com");
+  print(magazine.name);
+  print(magazine.downloadLink);
+}
 
-  var hikedPrices = currentPrices.map((price) => price + 500.0).toList();
+class Product {
+  String name;
+  double price;
 
-  var filteredPrices = hikedPrices.where((price) => price > 2500.0).toList();
+  Product(this.name, this.price);
 
-    print(filteredPrices);
-  
+}
 
-  for (var price in hikedPrices) {
-    print("New Prices after hike: ₦$price");
-  }
+class DigitalProduct extends Product {
+  String downloadLink;
+  DigitalProduct(String name, double price, this.downloadLink): super(name, price);
+
 }
