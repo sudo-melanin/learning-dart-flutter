@@ -64,7 +64,7 @@ void main(List<String> args) {
     user.accessWorkout();
   
     if (user is PremiumMember){
-    user.downloadVideo;
+    user.downloadVideo();
     }
     print("-" * 25);
   }
