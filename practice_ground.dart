@@ -1,19 +1,11 @@
-void main(List<String> args) {
-  DigitalProduct magazine = DigitalProduct("Eat that frog", 30, "www.eatthatfrog.com");
-  print(magazine.name);
-  print(magazine.downloadLink);
+
+Future<void> downloadVideo() async {
+  print("Download Starting......");
+  await Future.delayed( Duration(seconds: 4));    // simulating a download delay
+  print("Download Completed!");
 }
 
-class Product {
-  String name;
-  double price;
-
-  Product(this.name, this.price);
-
-}
-
-class DigitalProduct extends Product {
-  String downloadLink;
-  DigitalProduct(String name, double price, this.downloadLink): super(name, price);
-
-}
+void main(List<String> args) async{
+  await downloadVideo();
+  print("You can now watch the video offline.");
+  }
