@@ -32,7 +32,7 @@ void main(List<String> args) {
   // Using null-coalescing operator to assign displayPrice
   double displayPrice = discountPrice ?? finalPrice;
 
-  print("Product: $productName (Category: ${category!.toUpperCase()})");  // Using ! to assert category is not null
+  print("Product: $productName (Category: ${category.toUpperCase()})");  // Using ! to assert category is not null
   print("Price: ₦$displayPrice");
 
   String? description;

@@ -37,7 +37,7 @@ void main(List<String> args) {
   double? discount;
   discount ??= 0.05;
   print("Discount: $discount");
-  print(discount!.toStringAsFixed(2)); // Asserts discount is not null and formats it
+  print(discount.toStringAsFixed(2)); // Asserts discount is not null and formats it
 
   print("\nLoading favourite workout...");
   favouriteWorkout = "Yoga";          // Now initialized
