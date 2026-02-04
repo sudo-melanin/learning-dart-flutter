@@ -30,6 +30,7 @@ void main(List<String> args) async{
     };
 
     double cartTotal = 0.0;
+    double ? discountCode = 0.10;
 
     for (var item in addOns.entries) {
       stdout.write("Do you wat to add ${item.key} for ${item.value}? (y/n): ");
@@ -41,6 +42,12 @@ void main(List<String> args) async{
       }
    }
    
+   if (discountCode != null) {
+      double discountAmount = cartTotal * discountCode;
+      cartTotal -= discountAmount;
+      print("Discount of $discountAmount applied.");
+   }
+
    if (cartTotal > user.balance) {
       print("Error: Insufficienct funds. Your balance is ${user.balance}");
    } else if (cartTotal == 0) {
