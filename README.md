@@ -1,34 +1,42 @@
 # learning-dart-flutter
 
-# My Dart and Flutter Journey
+## Dart Foundations: The Road to Flutter
+This repository is a comprehensive record of my journey through the 7 Pillars of Dart. It tracks my transition from understanding basic variables to architecting complex, asynchronous systems for real-world applications like Market Gist (E-commerce) and FitLink (Fitness Tracking).
 
-A structured log of my practice progress (revisit) as I transition into professional Mobile App Development.
+## The 7 Blocks of Mastery
 
-### Block 1: The Foundation
-[x] Variables & Data Types (`01_foundation.dart`)
-[x] User Input & Type Parsing (`01_user_input.dart`)
-[x] Basic Control Flow (`01_market_gist_calc.dart`)
+### 1. Variables & Data Types
+  Concepts: Type safety (int, String, double), final vs const, and String interpolation.
 
-### Block 2: Data Structures (Current Goal )
-[ ] Lists (Ordered Data)
-[ ] Maps (Key-Value Pairs)
-[ ] Enums & Sets
+### 2. Control Flow & Logic
+  Concepts: if/else statements, relational operators, and logical branching.
 
-### Block 3: Functions & Null Safety
-[ ] Named & Optional Parameters
-[ ] Arrow Functions
-[ ] Null Aware Operators (`??`, `?.`)
+### 3. Functions & Scope
+  Concepts: Named vs Positional parameters, Arrow syntax (=>), and Global vs Local scope.
 
-### Block 4 & 5: OOP (Object Oriented Programming)
-[x] Classes & Constructors
-[x] Encapsulation (Private Variables)
-[x] Inheritance & Polymorphism
-[x] Abstraction
-[x] Mixins
+#### Project: Inflation Engine — A reusable function to calculate price hikes across inventory.
 
+### 4. Null Safety & Error Handling
+  Concepts: Nullable types (?), Null-aware operators (??, ?., !), and try-catch-finally blocks.
 
-## Mini Projects
+#### Project: The Resilient Checkout — A system that recovers from uninitialized data and "rescues" the app from crashing.
 
-1. **Market Gist Calc**: A terminal-based price calculator.
-2. **FitLink Logic**: User onboarding and heart rate calculator.
-3. **Core Log**: Task management logic (In Progress).
+### 5. Loops & Iteration
+Concepts: for, while, for-in, and .forEach for Maps.
+
+#### Project: Market Gist Search — Iterating through inventory to find specific items and calculating running totals.
+
+### 6. Object-Oriented Programming (OOP)
+Concepts: Abstract Classes, Inheritance (extends), Encapsulation (_private), and Polymorphism.
+
+Project: FitLink Member Management — A hierarchy of Free, Premium, and Trainer accounts with unique permissions and behaviors.
+
+### 7. Asynchronous Programming
+Concepts: Future<T>, async, and await.
+
+### Final Capstone: The Ultimate Checkout System
+  The final project in this repository, ultimate_dart_capstone.dart, integrates all the above concepts into a single interactive program:
+  OOP: Uses abstract classes for user management.
+  Data Structures: Manages add-ons via Maps.
+  Async Logic: Processes "bank payments" using Futures.
+  Safety: Implements full error handling and nullable discount codes.
