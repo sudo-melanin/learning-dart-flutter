@@ -122,7 +122,7 @@ void main(List<String> args) async {
   } catch (e) {
     print("An error occurred: $e");
   } finally {
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(Duration(seconds: 5)); // Allow some time for market updates to finish
     print("\nFinal Wallet Balance: \$${amos.balance}");
     await newsStream.cancel();
     print("\nThank you for using the Multi-Service Hub. Goodbye!");
